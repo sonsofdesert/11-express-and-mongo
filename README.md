@@ -32,20 +32,10 @@
   * it can **not** have the same properties as the in-class sample code (other than the `id`)
   * include two additional properties of your choice
 * Create a RESTful API to interact with your model through the server.
-* Create a new `mongodb-storage.js` module that stores instances of your
-  resource in MongoDB. It should use Mongoose.
-  * Create your `mongodb-storage` module so it uses the same API as
-    memory storage and file storage modules created in lecture.
-    * `save(resource)` - accepts a resource instance and saves it
-    * `get(id)` - returns a promise that resolves to one resource matching the
-      given id.
-    * `getAll()` - returns a promise that resolves to a list of all the ids for
-      every resource that's been created.
-    * `remove(id)` - removes the resource from the database and returns
-      a promise and resolves to the resource that was removed.
-    * `removeall()` - removes all the resources from the database, and
-      returns a promise that resolves to a list of every resource that was
-      removed.
+* Create a directory called `routes` that houses files with routes for
+  different parts of your application
+* Create a dictory called `models` that houses the file with your Mongoose
+  model.
 
 #### Server Endpoints
 * **`/api/simple-resource-name`**
