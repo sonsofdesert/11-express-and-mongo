@@ -10,7 +10,8 @@
 * Write a question and observation on canvas
 
 ## Learning Objectives  
-* Students will be able to create a single resource API using the express framework
+* Students will be able to create a RESTful single resource API using the
+  express framework
 * Students will be able to persist data using MongoDB
 * Students will interact with MongoDB through Mongoose
 
@@ -29,8 +30,7 @@
 #### Feature Tasks
 * Create an HTTP server using `express`
 * Create a Mongoose model with at least three attributes
-  * it can **not** have the same properties as the in-class sample code (other than the `id`)
-  * include two additional properties of your choice
+  * it can **not** have the same properties as the in-class sample code
 * Create a RESTful API to interact with your model through the server.
 * Create a directory called `routes` that houses files with routes for
   different parts of your application
@@ -44,12 +44,12 @@
 * `GET` request
  * If no `?id=` is passed in the URL return a list of ids of every resource.
 * `GET` request
- * pass `?id=<uuid>` as a query string parameter to retrieve a specific resource (as JSON)
+ * pass `?id=<_id>` as a query string parameter to retrieve a specific resource (as JSON)
 * `PUT` request
- * pass `?id=<uuid>` as a query string parameter to identify a specific resource (as JSON)
+ * pass `?id=<_id>` as a query string parameter to identify a specific resource (as JSON)
  * pass data as stringifed JSON in the body of a **POST** request to update a resource
 * `DELETE` request
- * pass `?id=<uuid>` in the query string to **DELETE** a specific resource
+ * pass `?id=<_id>` in the query string to **DELETE** a specific resource
  * this should return a 204 status code with no content in the body
 
 #### Tests
